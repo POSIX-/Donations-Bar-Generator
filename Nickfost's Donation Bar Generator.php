@@ -40,30 +40,32 @@
  <?php
   //debug
  if ($debug == 'on'){
- echo "<br /><h3>DEBUG</h3><br />";
- echo "<p>CONFIG></p>";
- echo "<p>-------------</p>";
- echo "<p>Cost = " .$cost. "</p>";
- echo "<p>Donations = " .$donations. "</p>";
- echo "<p>Width = " .$width. "</p>";
- echo "<p>Height = " .$height. "</p>";
- echo "<p>Font Size = " .$fontsize. "</p>";
- echo "<p>Percent in red =" .$percentinred. "</p>";
- echo "<p style='color:".$alternategreen.";'>Alternate Green = " .$alternategreen. "</p>";
- echo "<p style='color:".$alternatered.";'>Alternate Red = " .$alternatered. "</p>";
- echo "<p style='color:".$textcolor.";'>Text Color = " .$textcolor. "</p>";
- echo "<p>Decimal Place Limit = " .$decimalplacelimit. "</p>";
- echo "<p>Debug = " .$debug. "</p>";
- echo "<br />Math section<br />";
- echo "<p>-------------</p>";
- echo "<p>Ratio = " .$ratio. "</p>";
- echo "<p>Percent = " .$percent. "</p>";
- echo "<p>greenwidth = " .$greenwidth. "</p>";
- echo "<p>Redwidth = " .$redwidth. "</p>";
- echo "<br />OTHER<br />";
- echo "<p>-------------</p>";
- echo "<p>enabled perecent in red  = " .$enabledpercentinred. "</p>";
- echo "<p><h6>This was made with Nickfost's Donations Bar Generator V. 1.5</h6>";
+ echo <<<EOF
+	 <br /><h3>DEBUG</h3><br />
+	 <p>CONFIG></p>
+	 <p>-------------</p>
+	 <p>Cost = $cost </p>
+	 <p>Donations = $donations </p>
+	 <p>Width = $width </p>
+	 <p>Height = $height </p>
+	 <p>Font Size = $fontsize </p>
+	 <p>Percent in red = $percentinred </p>
+	 <p style='color:".$alternategreen.";'>Alternate Green = $alternategreen </p>
+	 <p style='color: $alternatered;'>Alternate Red = $alternatered </p>
+	 <p style='color: $textcolor;'>Text Color = $textcolor </p>
+	 <p>Decimal Place Limit = $decimalplacelimit </p>
+	 <p>Debug =  $debug
+	 <br />Math section<br />
+	 <p>-------------</p>
+	 <p>Ratio = $ratio </p>
+	 <p>Percent =  $percent </p>
+	 <p>greenwidth =  $greenwidth </p>
+	 <p>Redwidth = $redwidth </p>
+	 <br />OTHER<br />;
+	 <p>-------------</p>;
+	 <p>enabled perecent in red  = $enabledpercentinred </p>
+	 <p><h6>This was made with Nickfost's Donations Bar Generator V. 1.5</h6>
+EOF;
  }
  ?>
  
